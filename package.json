@@ -7,7 +7,8 @@
     "start": "node webserver.js"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "webpack": "^4.40.0"
   },
   "engines": {
     "node": "8.x"
