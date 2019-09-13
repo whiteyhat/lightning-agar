@@ -275,15 +275,18 @@
         ws.onclose = wsClose;
     }
     function wsOpen() {
+        console.log('wsOpen')
         disconnectDelay = 1000;
         byId("connecting").hide();
         wsSend(SEND_254);
         wsSend(SEND_255);
     }
     function wsError(error) {
+        console.log('wsError', error)
         log.warn(error);
     }
     function wsClose(e) {
+        console.log("ws disconnected " + e.code + " '" + e.reason + "'");
         log.debug("ws disconnected " + e.code + " '" + e.reason + "'");
         wsCleanup();
         gameReset();
