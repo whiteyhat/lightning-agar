@@ -68,36 +68,41 @@
         <div id="helloDialog">
             <center>
             <div class="form-group">
-                <h2 id="title">Lightning Agar</h2>
+                <h2 id="title">LIGHTNING AGAR</h2>
             </div>
             <img style="height:100px;" src="assets/img/icon.png" alt="Lightning Agar"></center>
             <br>
-            <div class="alert alert-warning" role="alert"><B>IMPORTANT</B>: Type the same username as your <a href="https://satoshis.games" target="_blank">Satoshis.Games</a> username</div>
-            <div class="form-group">
+            <center>
+                <h4 id="title">MINTGOX WINNERS TABLE</h4>
+                <img src="https://elixir-gaming.s3.eu-west-2.amazonaws.com/winners.png" alt=""></center>
+            <div style="display:none" class="alert alert-warning" role="alert"><B>IMPORTANT</B>: Type the same username as your <a href="https://satoshis.games" target="_blank">Satoshis.Games</a> username</div>
+            <div style="display:none" class="form-group">
                 <input id="nick" class="form-control" placeholder="Satoshis Games Username"
                     maxlength="15">
                 <input id="skin" class="form-control" placeholder="Skin Name">
-                <select  id="gamemode" class="form-control" onchange="setserver(this.value)"
+                <!--select  id="gamemode" class="form-control" onchange="setserver(this.value)"
                     required>
-                    <option value="agar-battlefield.satoshis.games" selected>Mintgox Tournament</option>
-                </select>
+                    <option value="agar-teams.satoshis.games">Mintgox Teams</option>
+                    <option value="agar-tournament.satoshis.games" selected>Mintgox Tournament</option>
+                    <option value="agar-battlefield.satoshis.games">Mintgox Deathmatch</option>
+                </select-->
             </div>
 
             <!--button id="pay-button" class="btn btn-play btn-primary btn-needs-server play-btn" type="button"
                 data-toggle="modal" data-target="#joinAgar">Play</button-->
-            <button id="play-btn"
+            <button style="display:none" id="play-btn"
                 class="btn btn-play btn-primary btn-needs-server play-btn">Start</button>
-            <button id="spectate-btn" onclick="spectate()"
+            <button style="display:none" id="spectate-btn" onclick="spectate()"
                 class="btn btn-warning btn-spectate spectate-btn btn-needs-server"><i class="fas fa-eye"></i></button>
-            <button id="gallery-btn" onclick="openSkinsList()"
+            <button style="display:none" id="gallery-btn" onclick="openSkinsList()"
                 class="btn btn-play btn-primary btn-needs-server btn-success play-btn">Skins Gallery</button>
 
-            <button class="btn btn-danger btn-spectate spectate-btn btn-needs-server" type="button"
+            <button style="display:none" class="btn btn-danger btn-spectate spectate-btn btn-needs-server" type="button"
                 data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
                 aria-controls="collapseExample"><i class="fas fa-cog"></i>
             </button>
             <br>
-            <div class="collapse" id="collapseExample">
+            <div style="display:none" class="collapse" id="collapseExample">
                 <div class="card card-body">
                     <div id="settings" class="checkbox">
                         <div style="margin: 6px;">
@@ -124,7 +129,7 @@
                 </div>
             </div>
 
-            <div id="instructions">
+            <div style="display:none" id="instructions">
                 <hr>
                 <center>
                     <span class="text-muted">
@@ -138,7 +143,7 @@
 
             <hr>
             <div id="footer">
-                <span class="text-muted">Have fun!</span>
+                <!--span class="text-muted">Have fun!</span-->
             </div>
 
         </div>
